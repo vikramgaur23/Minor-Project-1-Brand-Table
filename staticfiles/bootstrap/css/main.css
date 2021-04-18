@@ -1,0 +1,156 @@
+li{
+  list-style: none;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+#sidebar.active {
+    margin-left: -250px;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #02B636;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+    text-decoration: none;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #000;
+    font-size: 1.6em;
+}
+ul ul a {
+    font-size: 1.5em !important;
+    padding-left: 30px !important;
+    background: #000;
+}
+
+.components .hey a{
+	color: #fff;
+}
+.components .hey{
+	font-size: 1.5em;
+}
+.mycarouse1{
+    
+    font-size: 28px; 
+    padding: 0px 10px;
+
+}
+.me{
+	float: right;
+	margin-left: 250px;
+}
+
+td button{
+	float: right;
+}
+.wrapper{
+    max-height: 100vh;
+    background-image: url(../../image/hu.jpg);
+    background-size: cover;
+    
+}
+.content{
+    position: relative;
+    padding:6% 0px;
+    margin-top: 17%; 
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 660px;
+    letter-spacing: 0.3em;
+    margin-right: 30%
+}
+
+
+.button {
+    background: #02B636;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 175%;
+    margin: 4px 2px;
+    cursor: pointer;
+    height:213px;width:213px;
+    border: 2px solid white;
+    letter-spacing:3px;
+    padding-bottom: 2%;
+}
+.button:hover{ border: 1px solid #02B636;}
+.button1:hover{background-image:url(../../image/beverage.jpg)}
+.button2:hover{background-image:url(../../image/burger.jpg)}
+.button3:hover{background-image:url(../../image/combo.jpg)}
+.button4:hover{background-image:url(../../image/chinese.jpg)}
+.button5:hover{background-image:url(../../image/parantha.jpg)}
+.button6:hover{background-image:url(../../image/pastries&cake.jpg)}
+.button7:hover{background-image:url(../../image/rice.jpg)}
+.button8:hover{background-image:url(../../image/rolls.jpg)}
+.button9:hover{background-image:url(../../image/sandwich.jpg)}
+.button10:hover{background-image:url(../../image/snacks.jpg)}
+.button11:hover{background-image:url(../../image/southIndian.jpg)}
+.button12:hover{background-image:url(../../image/thali.jpg)}
+
+.modal-header,.modal-footer{
+    background-color: black;
+    color: white;
+}
+.modal-body{
+    border: 1px solid #02B636;
+}

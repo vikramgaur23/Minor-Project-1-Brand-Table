@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BRAND TABLE</title>
+	<link rel="stylesheet" type="text/css" href="../../../static/bootstrap/css/main.css">
+	<link rel="stylesheet" href="../../../static/bootstrap/css/bootstrap1.min.css">
+	<script type="text/javascript" src ="../../../static/bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../../static/bootstrap/js/bootstrap1.min.js"></script>
+</head>
+<body style="font-family: Raleway; background-color: #fff;">
+	
+
+	<div class="wrapper">
+		 
+    
+    <nav id="sidebar">
+        <div class="sidebar-header">
+           <!-- <h3>{{request.user.first_name}}</h3> -->
+            
+        </div>
+
+        <ul class="list-unstyled components">
+    			<li class="hey"><a href="#" >History</a></li>
+          {% if item_count > 0 %}
+          <li class="hey"><a href="cart" >List({{ item_count }})</a></li>
+          {% endif %}
+			   <li class="hey"><a href="#menu" >Menu</a></li>
+         <li class="hey"><a href="#mood">Moods</a></li>
+        	<li class="hey"><a href="#">Contact Us</a></li>
+            
+           
+        </ul>
+    </nav>
+    <div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-success">
+                <i class="fas fa-align-left"></i>
+                <span>Cafe Time</span>
+            </button>
+        </div>
+
+            
+		
+    </nav>
+</div>
+
+
+
+<!-- on body section-->
+
+
+
+  <center>
+      <div class="container">
+    <div class="content">
+      <h1 >Green Chilli</h1>
+      <br>
+    <h4>💗All you need is love and food 💗</h4>
+      
+    </center>
+    </div>
+    </div>
+
+
+<!-- Moods section-->
+<div class="container-fluid" style="background-color:white;height: 100vh;">
+    <div id="mood">
+     <h1 class="text-center" style="letter-spacing: 0.3em;background-color: lightgreen;margin-top: 8%;margin-bottom: 5%;">(-: What's your Mood :-)</h1><br>
+   </div>
+   <br>
+   <div class="container-fluid">
+  <div class="text-center">
+    <h2>Some cool Plans</h2>
+    <h4>So, Whats your mood Today...</h4><br><br>
+    <br>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        
+        <div class="panel-body">
+          <img src=" ../../../static/image/bday.png" alt="bday celebration">
+          <p class="text-center"> cool package for perfect<br>bday party</p>
+        </div>
+        <div class="panel-footer" style="background-color: skyblue;">
+          
+          <button class="btn btn-primary">Take a Look</button>
+        </div>
+      </div> 
+    </div> 
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        
+        <div class="panel-body">
+          <img src=" ../../../static/image/catering.png" alt="catering>
+          <p class="text-center"><br>Some cool Combos of <br>Morning breakfast.<br>Save time.</p>
+        </div>
+        <div class="panel-footer" style="background-color: skyblue;">
+         
+          <button class="btn btn-primary">Take a Look</button>
+        </div>
+      </div> 
+    </div> 
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        
+        <div class="panel-body">
+          <br>
+          <img src=" ../../../static/image/nycc.png" alt="catering">
+          <p class="text-center"><br>Perfect sweets for <br> sweet lovers<br></p>
+        </div>
+        <div class="panel-footer" style="background-color: skyblue;">
+          
+          <button class="btn btn-primary">Take a Look</button>
+        </div>
+      </div> 
+    </div> 
+  </div>
+</div>
+      
+  
+</div>
+<br><br><br><br>
+
+<!--Menu Section -->
+
+<div class="container" style="background-color:white;">
+  <div id="menu">
+  <h1 class="text-center" style="letter-spacing: 0.3em;margin-top:9%;margin-bottom:5%;background-color: lightgreen">Menu</h1><br>
+    
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-6">
+            <a href="#" data-toggle="modal" data-target="#l1"><button class="button button1">🍹<br>Beverages</button></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l2"><button class="button button2">🍔<br>Burger</button></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l3"><button class="button button3">🍱<br>Combo</button></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l4"><button class="button button4">🍜<br>Chinese</button></a>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l5"><button class="button button5">🍳<br>Parantha</button></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l6"><button class="button button6">🍰🍨<br>Pastries & Ice-cream</button></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l7"><button class="button button7">🍛<br>Rice</button></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l8"><button class="button button8">🍡<br>Rolls</button></a>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l9"><button class="button button9">🍞<br>Sandwich</button></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l10"><button class="button button10">🍟<br>Snacks</button></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l11"><button class="button button11">🍴<br>South Indian</button></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#" data-toggle="modal" data-target="#l13"><button class="button button12">🍲<br>Thali</button></a>
+        </div>
+        </div>
+    </div>
+  
+</div>
+</div>
+
+
+<!-- Modal box section-->
+<div id="l1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Bevereges</h4>
+            </div>
+            <div class="modal-body">
+              
+            <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in bev %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="{% url 'cart:add_cart' object.id %}">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+      
+    </tbody>
+  </table>
+
+                </div>
+                
+              </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l10" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Snacks</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in sna %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l9" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Sandwich</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in san %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+       </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l5" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Paratha</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in par %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+ </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l3" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Combo</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in com %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+
+                  
+                  
+                  
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l7" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Rice</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in ric %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+
+                  
+                  
+                  
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l8" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Rolls</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in rol %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+
+                  
+                  
+                  
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Burger</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      {% for object in bur %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+
+                  
+                  
+                  
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l4" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Chinese</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in chi %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+
+                  
+                  
+                  
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l11" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">South Indian</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in sou %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+
+                  
+                  
+                  
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l13" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Thali</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                  
+              
+  <table class="table table-responsive table-stripped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in tha %}
+
+      <tr>
+        <td>{{ object.name }}</td>
+        <td>{{ object.price }}</td>
+        <td><a class="btn btn-success" href="">Add to list</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+
+                  
+                  
+                  
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="l12" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">List</h4>
+            </div>
+            <div class="modal-body">
+               <div class="clearfix">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" >Place Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+
+});
+	function add(){
+
+	}
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+<footer style="background-color: skyblue;bottom:fixed;margin-top: 4%;height: 1%;">
+  <p class="text-center" style="padding-top: 0.5% ;">Contact us | This is me.</p>
+</footer>
+</html>

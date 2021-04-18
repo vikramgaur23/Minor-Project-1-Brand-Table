@@ -1,0 +1,96 @@
+
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Form</title>
+	<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../static/bootstrap/css/custom.css">
+  <link rel="shortcut icon" type="../../../static/image/x-icon" href="../../../static/image/favicon.ico" /> 
+  <script src="../../../static/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../../static/bootstrap/js/jquery.min.js"></script>
+<link rel="stylesheet" href="../../../static/bootstrap/css/animate.css">
+<script src="../../../static/bootstrap/js/wow.min.js"></script>
+  <script src="../../../static/bootstrap/js/popper.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid"style="background-color:red ">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="nb"style="margin-top:3px;">
+      <a href="/"><img src="../../../static/image/icon.jpg"></a>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a class="share-btns__link" href="https://plus.google.com/share?url=https://www.templatemonster.com/blog/how-to-add-social-media-icons-website/" target njm="_blank" rel="nofollow" title="Share on Google+"><i class="fa fa-google-plus"></i><span class="share-btns__label screen-reader-text"><img src="../../../static/image/gmailicon.png"></span></a></li>
+        <li><a class="share-btns__link" href="https://twitter.com/intent/tweet?text=How%20to%20Add%20Social%20Media%20Icons%20to%20Your%20Website%20%20via%20%40templatemonster&amp;url=http://bit.ly/2gaL80x" target="_blank" rel="nofollow" title="Share on Twitter"><i class="fa fa-twitter"></i><span class="share-btns__label screen-reader-text"><img src="../../../static/image/twittericon.png"></span></a></li>
+       <li><a class="share-btns__link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.templatemonster.com/blog/how-to-add-social-media-icons-website/&amp;t=How to Add Social Media Icons to Your Website" target="_blank" rel="nofollow" title="Share on Facebook"><i class="fa fa-facebook"></i><span class="share-btns__label screen-reader-text"><img src="../../../static/image/fbicon.png"></span></a></li>
+       <li style="margin-top:5px;"><a href="register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li style="margin-top:5px;"><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="margin-top: 0%; color:white;">
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-6  my_custom_div">
+			<br>
+			<div>
+				{% if not form.is_valid %}
+				<div class="mx-auto">
+					<br>
+					<h1  class="my_title" >Create new account</h1>
+					<br>
+					<p>Enter the following information to create new account.</p>
+						<form method="POST">
+							{% csrf_token %}
+							<p>{{ form|crispy }}</p>
+							<button type="submit" class="btn btn-success">Register</button>
+						</form>
+						<br>
+					
+				</div>
+				{% else %}
+
+				<div class="mx-auto">
+					<br>
+					<h1 class="my_title text-center">successful</h1>
+						<a href="main">Continue</a>
+					</div>
+					{% endif %}
+			</div>
+
+		</div>
+		<div class="col-12 col-sm-12 col-md-12 col-lg-4 c0l-lg-offset-2 bg-light">
+			<div style="margin-left: 30%;margin-top: 30%;">
+				<br>
+				<h2 class="my_title">Registered  Customer</h2>
+			<p>Click here to Login</p>
+			<br>
+			<a href="login" class="btn btn-success">Login</a>
+				<br>
+			</div>
+		</div>
+	</div>
+	<br>
+</div>
+
+</body>
+</html>
